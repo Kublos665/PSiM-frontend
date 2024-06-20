@@ -13,6 +13,7 @@ import com.example.myapplication.ApiInterface;
 import com.example.myapplication.R;
 import com.example.myapplication.objects.Achievement;
 import com.example.myapplication.objects.User;
+import com.google.gson.Gson;
 
 import org.bson.types.ObjectId;
 
@@ -37,9 +38,8 @@ public class AchievementsActivity extends AppCompatActivity {
 
         achievementsContainer = findViewById(R.id.achievements_container);
 
-        // Póki co na sztywno wklepany username xdddddd
+        User user = new Gson().fromJson(getIntent().getStringExtra("user"), User.class);
         String username = "Jan";
-
         fetchUserIdAndAchievements(username);
     }
 

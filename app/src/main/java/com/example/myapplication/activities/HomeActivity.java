@@ -68,12 +68,14 @@ public class HomeActivity extends AppCompatActivity {
                 }
                 else if (id == R.id.nav_achievements) {
                     Intent intent = new Intent(HomeActivity.this, AchievementsActivity.class);
+                    intent.putExtra("user", getIntent().getStringExtra("user"));
                     startActivity(intent);
                     drawer.closeDrawer(GravityCompat.START);
                     return true;
                 }
                 else if (id == R.id.nav_profile) {
                     Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+                    intent.putExtra("user", getIntent().getStringExtra("user"));
                     startActivity(intent);
                     drawer.closeDrawer(GravityCompat.START);
                     return true;

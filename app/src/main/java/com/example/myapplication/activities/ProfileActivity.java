@@ -11,7 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.myapplication.ApiInterface;
 import com.example.myapplication.R;
 import com.example.myapplication.objects.Achievement;
+import com.example.myapplication.objects.Route;
 import com.example.myapplication.objects.User;
+import com.google.gson.Gson;
 
 import org.bson.types.ObjectId;
 
@@ -38,6 +40,7 @@ public class ProfileActivity extends AppCompatActivity {
         textAchievements = findViewById(R.id.text_achievements);
         textPlaytime = findViewById(R.id.text_playtime);
 
+        User user = new Gson().fromJson(getIntent().getStringExtra("user"), User.class);
         String username = "Jan";
         fetchUser(username);
     }

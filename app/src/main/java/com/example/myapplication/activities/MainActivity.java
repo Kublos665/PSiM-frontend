@@ -14,6 +14,7 @@ import com.example.myapplication.ApiInterface;
 import com.example.myapplication.objects.PostResponse;
 import com.example.myapplication.objects.User;
 import com.example.myapplication.databinding.LoginPageBinding;
+import com.google.gson.Gson;
 
 import java.io.IOException;
 
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
                         if (responseCode == 200) {
                             Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                            intent.putExtra("user", new Gson().toJson(user));
                             startActivity(intent);
                             finish();
                         } else {
