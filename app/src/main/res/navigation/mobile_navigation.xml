@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_login">
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.myapplication.ui.home.HomeFragment"
+        android:label="@string/login_page"
+        tools:layout="@layout/login_page" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myapplication.ui.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_routes"
+        android:name="com.example.myapplication.ui.routes.GalleryFragment"
+        android:label="@string/menu_routes"
+        tools:layout="@layout/fragments_routes" />
+
+    <fragment
+        android:id="@+id/nav_rankings"
+        android:name="com.example.myapplication.ui.rankings.GalleryFragment"
+        android:label="@string/menu_rankings"
+        tools:layout="@layout/fragment_rankings" />
+
+    <fragment
+        android:id="@+id/nav_poi_discussions"
+        android:name="com.example.myapplication.ui.poi_discussions.GalleryFragment"
+        android:label="@string/menu_poi_discussions"
+        tools:layout="@layout/fragment_poi_discussions" />
+
+    <fragment
+        android:id="@+id/nav_achievements"
+        android:name="com.example.myapplication.ui.achievements.GalleryFragment"
+        android:label="@string/menu_achievements"
+        tools:layout="@layout/fragment_achievements" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.myapplication.ui.profile.GalleryFragment"
+        android:label="@string/menu_my_profile"
+        tools:layout="@layout/fragment_profile" />
+
+
+</navigation>
+

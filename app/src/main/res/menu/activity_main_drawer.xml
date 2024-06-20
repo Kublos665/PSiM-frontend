@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_routes"
+            android:icon="@drawable/route_img"
+            android:title="@string/menu_routes" />
+        <item
+            android:id="@+id/nav_rankings"
+            android:icon="@drawable/rank_img"
+            android:title="@string/menu_rankings" />
+        <item
+            android:id="@+id/nav_poi_discussions"
+            android:icon="@drawable/chat_img"
+            android:title="@string/menu_poi_discussions" />
+        <item
+            android:id="@+id/nav_achievements"
+            android:icon="@drawable/star_icon"
+            android:title="@string/menu_achievements" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/face_img"
+            android:title="@string/menu_my_profile" />
+    </group>
+</menu>
